@@ -1,42 +1,40 @@
 package pooTurma;
 
-public class Turma {
-	//Atributos da classe
-	String nome;
-	String telefone;
-	String email;
-	
+public class Turma extends Senac {
+	String mencao;
+	String emailEducacional;	
 	
     //Construtor 
     public Turma() {
-	
-	   System.out.println("___________________________");
+    	System.out.println("");
+	   System.out.println("Unidade Curricular 10|Banco de Dados");
 	   
 }    
-       public void beberAguaAluno() {
-    	   beberAgua();
+       public void unidadeCurricular() {
+    	  if (mencao =="D"){
+    		  aprovadoAluno();
+    	  }
+    	  
+    	  else {
+    		reprovarAluno();
+    	  } 
+       
        }
 
 
-    //Métodos
-    void ligarPc() {
-      System.out.println ("Computador ligado");
-	   
-   }
    
-    void logar() {
-	System.out.println("Login feito com sucesso");
+ 
+
+	private void aprovadoAluno() {
+		
+		System.out.println("O aluno(a)aprovado(a)!");
+	}
 	
-   }
-   
-   void desligarPc() {
-	System.out.println("Computador desligado");
-   
-   }
-
-
-	private void beberAgua() {
-		System.out.println("Ir ao bebedouro para beber água");
+	
+	private void reprovarAluno() {
+		
+		System.out.println("Aluno(a)REPROVADO(a)!");
+	
 	}
 }
 
